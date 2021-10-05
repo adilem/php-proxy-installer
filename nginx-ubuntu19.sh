@@ -18,10 +18,10 @@ mkdir -p /var/www/proxy
 
 ## Installation
 sudo apt-get -y install composer
-composer create-project athlon1600/php-proxy-app:dev-master /var/www/proxy --no-interaction
+composer create-project adilem/php-proxy-app:dev-master /var/www/proxy --no-interaction
 
 ## Download configuration
-wget https://raw.githubusercontent.com/Athlon1600/php-proxy-installer/master/nginx/proxy.conf -O /etc/nginx/sites-available/default
+wget https://raw.githubusercontent.com/adilem/php-proxy-installer/master/nginx/proxy.conf -O /etc/nginx/sites-available/default
 
 # sudo ln -s /etc/nginx/sites-available/proxy.conf /etc/nginx/sites-enabled/
 
