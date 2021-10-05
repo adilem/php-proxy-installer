@@ -39,7 +39,7 @@ sudo systemctl restart apache2
 rm -rf /var/www/*
 
 # Otherwise you cannot install to non-empty dir
-composer create-project adilem/php-proxy-app:dev-master /var/www/ --no-interaction
+composer create-project Athlon1600/php-proxy-app:dev-master /var/www/ --no-interaction
 
 
 ## Enable SSL now
