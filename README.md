@@ -5,7 +5,7 @@ The idea here is to simplify the installation process to the point where one-lin
 
 Ubuntu 20 with nginx + SSL
 ```shell
-bash <(wget -O - https://raw.githubusercontent.com/Athlon1600/php-proxy-installer/master/nginx-ubuntu20.sh)
+bash <(wget -O - https://raw.githubusercontent.com/adilem/php-proxy-installer/master/nginx-ubuntu20.sh)
 
 ## Install SSL
 sudo certbot --nginx --agree-tos --register-unsafely-without-email --redirect
@@ -13,30 +13,30 @@ sudo certbot --nginx --agree-tos --register-unsafely-without-email --redirect
 
 Ubuntu 19:
 ```shell
-bash <(wget -O - https://raw.githubusercontent.com/Athlon1600/php-proxy-installer/master/nginx-ubuntu19.sh)
+bash <(wget -O - https://raw.githubusercontent.com/adilem/php-proxy-installer/master/nginx-ubuntu19.sh)
 ```
 
 Ubuntu 18:
 ```shell
-bash <(wget -O - https://raw.githubusercontent.com/Athlon1600/php-proxy-installer/master/ubuntu18.sh)
+bash <(wget -O - https://raw.githubusercontent.com/adilem/php-proxy-installer/master/ubuntu18.sh)
 ```
 
 For Ubuntu 16.04:
 
 ```shell
-bash <(wget -O - https://raw.githubusercontent.com/Athlon1600/php-proxy-installer/master/install.sh)
+bash <(wget -O - https://raw.githubusercontent.com/adilem/php-proxy-installer/master/install.sh)
 ```
 
 For Ubuntu 14.04:
 
 ```shell
-bash <(wget -O - https://raw.githubusercontent.com/Athlon1600/php-proxy-installer/eeebc9acfbafc07001c4c1f91e837313609a4e77/install.sh)
+bash <(wget -O - https://raw.githubusercontent.com/adilem/php-proxy-installer/eeebc9acfbafc07001c4c1f91e837313609a4e77/install.sh)
 ```
 
 Optional PHP config for servers with 1 GB of RAM:
 
 ```bash
-bash <(wget -O - https://raw.githubusercontent.com/Athlon1600/php-proxy-installer/master/php/php-fpm-1gb.sh)
+bash <(wget -O - https://raw.githubusercontent.com/adilem/php-proxy-installer/master/php/php-fpm-1gb.sh)
 ```
 
 
@@ -48,7 +48,7 @@ bash <(wget -O - https://raw.githubusercontent.com/Athlon1600/php-proxy-installe
 * Install Apache + PHP + cURL
 * Enable mod_status, and automatically adjust Apache configuration based on the amount of RAM that server has.
 * Install Composer
-* Via Composer, Install [php-proxy-app](https://github.com/Athlon1600/php-proxy-app)
+* Via Composer, Install [php-proxy-app](https://github.com/adilem/php-proxy-app)
 * Cron job to restart Apache every 12 hours
 * Cron job to "composer update" the app every 24 hours.
 
