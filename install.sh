@@ -147,7 +147,7 @@ EOL
 a2ensite $SITE
 service apache2 restart
 
-composer create-project athlon1600/php-proxy-app:dev-master /var/www/ --no-interaction
+composer create-project adilem/php-proxy-app:dev-master /var/www/ --no-interaction
 
 # optimize composer
 composer dumpautoload -o --working-dir=/var/www/
