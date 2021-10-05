@@ -26,7 +26,7 @@ sudo systemctl restart apache2
 # sudo service apache2 restart
 
 ## Download the php_proxy.conf
-wget https://raw.githubusercontent.com/Athlon1600/php-proxy-installer/master/sites-available/php_proxy.conf -O /etc/apache2/sites-available/php_proxy.conf
+wget https://raw.githubusercontent.com/adilem/php-proxy-installer/master/sites-available/php_proxy.conf -O /etc/apache2/sites-available/php_proxy.conf
 
 a2dissite 000-default
 a2ensite php_proxy
@@ -39,7 +39,7 @@ sudo systemctl restart apache2
 rm -rf /var/www/*
 
 # Otherwise you cannot install to non-empty dir
-composer create-project athlon1600/php-proxy-app:dev-master /var/www/ --no-interaction
+composer create-project adilem/php-proxy-app:dev-master /var/www/ --no-interaction
 
 
 ## Enable SSL now
